@@ -1,22 +1,12 @@
 import React from 'react'
 import './App.css'
-
-const tg = window.Telegram.WebApp
+import Header from './components/Header/Header'
 
 function App() {
-	React.useEffect(() => {
-		tg.ready()
-	})
-
-	const handleClick = () => {
-		tg.close()
-	}
 	return (
 		<div>
-			work
-			<button onClick={handleClick}>Закрыть</button>
+			<Header />
 		</div>
 	)
 }
-
 export default App
